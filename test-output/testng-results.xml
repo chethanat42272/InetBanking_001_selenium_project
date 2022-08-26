@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Customer Registered Successfully!!!]]>
+    </line>
+    <line>
+      <![CDATA[Customer Registered Successfully!!!
+
+Registered Customer details are as follows:
+
+Customer ID 73571
+Customer Name Raj
+Gender male
+Birthdate 2000-05-12
+Address Basavanagudi
+City Bengalure
+State Karnataka
+Pin 560091
+Mobile No. 7163458368
+Email ycoKPVQ@gmail.com
+Continue]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-08-26T06:14:06Z" name="InetBanking" finished-at="2022-08-26T06:14:52Z" duration-ms="45876">
+    <groups>
+    </groups>
+    <test started-at="2022-08-26T06:14:06Z" name="BankingApp Test" finished-at="2022-08-26T06:14:52Z" duration-ms="45876">
+      <class name="com.ebanking.testcases.TC_addnewcustomer_003">
+        <test-method is-config="true" signature="setUP(java.lang.String)[pri:0, instance:com.ebanking.testcases.TC_addnewcustomer_003@5b67bb7e]" started-at="2022-08-26T06:14:06Z" name="setUP" finished-at="2022-08-26T06:14:17Z" duration-ms="11452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="createNewCustomer()[pri:0, instance:com.ebanking.testcases.TC_addnewcustomer_003@5b67bb7e]" started-at="2022-08-26T06:14:18Z" name="createNewCustomer" finished-at="2022-08-26T06:14:51Z" duration-ms="33923" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Customer Registered Successfully!!!]]>
+            </line>
+            <line>
+              <![CDATA[Customer Registered Successfully!!!
+
+Registered Customer details are as follows:
+
+Customer ID 73571
+Customer Name Raj
+Gender male
+Birthdate 2000-05-12
+Address Basavanagudi
+City Bengalure
+State Karnataka
+Pin 560091
+Mobile No. 7163458368
+Email ycoKPVQ@gmail.com
+Continue]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createNewCustomer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ebanking.testcases.TC_addnewcustomer_003@5b67bb7e]" started-at="2022-08-26T06:14:51Z" name="tearDown" finished-at="2022-08-26T06:14:52Z" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ebanking.testcases.TC_addnewcustomer_003 -->
+    </test> <!-- BankingApp Test -->
+  </suite> <!-- InetBanking -->
+</testng-results>

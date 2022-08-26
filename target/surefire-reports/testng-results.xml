@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-26T10:54:59Z" name="InetBanking" finished-at="2022-08-26T10:55:53Z" duration-ms="54613">
+    <groups>
+    </groups>
+    <test started-at="2022-08-26T10:54:59Z" name="BankingApp Test" finished-at="2022-08-26T10:55:53Z" duration-ms="54613">
+      <class name="com.ebanking.testcases.TC_DDT_002">
+        <test-method is-config="true" signature="setUP(java.lang.String)[pri:0, instance:com.ebanking.testcases.TC_DDT_002@2cb2fc20]" started-at="2022-08-26T10:54:59Z" name="setUP" finished-at="2022-08-26T10:55:08Z" duration-ms="8906" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="DDT_on_login(java.lang.String, java.lang.String)[pri:0, instance:com.ebanking.testcases.TC_DDT_002@2cb2fc20]" started-at="2022-08-26T10:55:10Z" name="DDT_on_login" data-provider="DDT_data" finished-at="2022-08-26T10:55:22Z" duration-ms="11893" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr434035]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tumAmUs]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DDT_on_login -->
+        <test-method signature="DDT_on_login(java.lang.String, java.lang.String)[pri:0, instance:com.ebanking.testcases.TC_DDT_002@2cb2fc20]" started-at="2022-08-26T10:55:22Z" name="DDT_on_login" data-provider="DDT_data" finished-at="2022-08-26T10:55:27Z" duration-ms="5861" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mhfg78464]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aFehjUfe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DDT_on_login -->
+        <test-method signature="DDT_on_login(java.lang.String, java.lang.String)[pri:0, instance:com.ebanking.testcases.TC_DDT_002@2cb2fc20]" started-at="2022-08-26T10:55:27Z" name="DDT_on_login" data-provider="DDT_data" finished-at="2022-08-26T10:55:36Z" duration-ms="8192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cjdjjo99855]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hShshWu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DDT_on_login -->
+        <test-method signature="DDT_on_login(java.lang.String, java.lang.String)[pri:0, instance:com.ebanking.testcases.TC_DDT_002@2cb2fc20]" started-at="2022-08-26T10:55:36Z" name="DDT_on_login" data-provider="DDT_data" finished-at="2022-08-26T10:55:46Z" duration-ms="9885" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr434035]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tumAmUs]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DDT_on_login -->
+        <test-method signature="DDT_on_login(java.lang.String, java.lang.String)[pri:0, instance:com.ebanking.testcases.TC_DDT_002@2cb2fc20]" started-at="2022-08-26T10:55:46Z" name="DDT_on_login" data-provider="DDT_data" finished-at="2022-08-26T10:55:53Z" duration-ms="7539" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nmkf890586]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hjUoPdul]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DDT_on_login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ebanking.testcases.TC_DDT_002@2cb2fc20]" started-at="2022-08-26T10:55:53Z" name="tearDown" finished-at="2022-08-26T10:55:53Z" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ebanking.testcases.TC_DDT_002 -->
+    </test> <!-- BankingApp Test -->
+  </suite> <!-- InetBanking -->
+</testng-results>

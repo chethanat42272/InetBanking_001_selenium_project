@@ -1,0 +1,10 @@
+com\ebanking\generics\read_common_data.class
+com\ebanking\pageobjects\New_CustomerPage.class
+com\ebanking\testcases\TC_DDT_002.class
+com\ebanking\testcases\TC_logintestcase_001.class
+com\ebanking\generics\BaseClass.class
+com\ebanking\testcases\TC_addnewcustomer_003.class
+com\ebanking\pageobjects\loginPage.class
+com\ebanking\utilities\Reporting.class
+com\ebanking\utilities\Utility_Xlsx_for_DDT.class
+com\ebanking\utilities\Waithelper.class
