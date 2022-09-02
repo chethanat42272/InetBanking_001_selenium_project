@@ -1,17 +1,19 @@
 package com.ebanking.testcases;
 
+import java.util.ArrayList;
+
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.ebanking.generics.BaseClass;
-import com.ebanking.pageobjects.New_CustomerPage;
+import com.ebanking.pageobjects.AddNew_CustomerPage;
 import com.ebanking.pageobjects.loginPage;
 
 public class TC_addnewcustomer_003 extends BaseClass
 {
 	
-	@Test
+	@Test(groups="RegressionTest")
 	public void createNewCustomer() throws InterruptedException
 	{
 		lpage=new loginPage(driver);
@@ -22,7 +24,7 @@ public class TC_addnewcustomer_003 extends BaseClass
 		logger.info("user clicking the login button");
 		lpage.setLoginbtn();
 		Thread.sleep(4000);
-		newcust=new New_CustomerPage(driver);
+		newcust=new AddNew_CustomerPage(driver);
 		newcust.click_new_customer_link();
 		Thread.sleep(4000);
 		try {
@@ -57,6 +59,13 @@ public class TC_addnewcustomer_003 extends BaseClass
 		{
 			Assert.assertFalse(false);
 		}
+		String Custid=newcust.getCustomerId();
+		
+		//custidlist.add(Custid);
+		custidlist.add("18005");
+				
+
+		
 		
 	}
 

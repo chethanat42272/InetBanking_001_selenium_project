@@ -4,16 +4,21 @@
   <listeners>
     <listener class-name="com.ebanking.utilities.Reporting"/>
   </listeners>
-  <test thread-count="5" name="BankingApp Test(failed)">
+  <test thread-count="5" name="BankingAppTest on chrome(failed)">
     <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="DeleteTest"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.ebanking.testcases.TC_addnewcustomer_003">
+      <class name="com.ebanking.testcases.TC_EditCustomer_004">
         <methods>
           <include name="setUP"/>
-          <include name="createNewCustomer"/>
           <include name="tearDown"/>
+          <include name="testDeleteCustomer"/>
         </methods>
-      </class> <!-- com.ebanking.testcases.TC_addnewcustomer_003 -->
+      </class> <!-- com.ebanking.testcases.TC_EditCustomer_004 -->
     </classes>
-  </test> <!-- BankingApp Test(failed) -->
+  </test> <!-- BankingAppTest on chrome(failed) -->
 </suite> <!-- Failed suite [InetBanking] -->

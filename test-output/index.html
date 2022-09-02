@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-InetBanking" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-InetBanking">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-InetBanking" title="com.ebanking.testcases.TC_addnewcustomer_003" class="method navigator-link" hash-for-method="createNewCustomer">createNewCustomer</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-InetBanking" title="com.ebanking.testcases.TC_EditCustomer_004" class="method navigator-link" hash-for-method="testEditCustomer">testEditCustomer</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-InetBanking -->
@@ -120,14 +120,14 @@
           <div class="suite-InetBanking-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.ebanking.testcases.TC_addnewcustomer_003</span>
+              <span class="class-name">com.ebanking.testcases.TC_EditCustomer_004</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createNewCustomer">
-                  </a> <!-- createNewCustomer -->
-                  <span class="method-name">createNewCustomer</span>
+                  <a name="testEditCustomer">
+                  </a> <!-- testEditCustomer -->
+                  <span class="method-name">testEditCustomer</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,12 +145,20 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.ebanking.utilities.Reporting&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;BankingApp Test&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;EditTest&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;BankingAppTest on chrome&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.ebanking.testcases.TC_logintestcase_001&quot;/&gt;
+      &lt;class name=&quot;com.ebanking.testcases.TC_DDT_002&quot;/&gt;
       &lt;class name=&quot;com.ebanking.testcases.TC_addnewcustomer_003&quot;/&gt;
+      &lt;class name=&quot;com.ebanking.testcases.TC_EditCustomer_004&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- BankingApp Test --&gt;
+  &lt;/test&gt; &lt;!-- BankingAppTest on chrome --&gt;
 &lt;/suite&gt; &lt;!-- InetBanking --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,7 +170,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">BankingApp Test (1 class)</span>
+                <span class="test-name">BankingAppTest on chrome (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -172,6 +180,14 @@
             <span class="header-content">Groups for InetBanking</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">EditTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testEditCustomer</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-InetBanking" class="panel">
@@ -190,14 +206,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createNewCustomer')
-data.setCell(0, 2, 'com.ebanking.testcases.TC_addnewcustomer_003')
-data.setCell(0, 3, 33923);
+data.setCell(0, 1, 'testEditCustomer')
+data.setCell(0, 2, 'com.ebanking.testcases.TC_EditCustomer_004')
+data.setCell(0, 3, 12308);
 window.suiteTableData['InetBanking']= { tableData: data, tableDiv: 'times-div-InetBanking'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-InetBanking">
               </div> <!-- times-div-InetBanking -->
             </div> <!-- times-div -->
@@ -208,34 +224,53 @@ return data;
             <span class="header-content">Reporter output for InetBanking</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">createNewCustomer</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Customer Registered Successfully!!!</span>
-                <span class="reporter-method-output">Customer Registered Successfully!!!
-
-Registered Customer details are as follows:
-
-Customer ID 73571
-Customer Name Raj
-Gender male
-Birthdate 2000-05-12
-Address Basavanagudi
-City Bengalure
-State Karnataka
-Pin 560091
-Mobile No. 7163458368
-Email ycoKPVQ@gmail.com
-Continue</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-InetBanking" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.ebanking.testcases.TC_EditCustomer_004</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUP</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">testDeleteCustomer</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.ebanking.testcases.TC_DDT_002</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUP</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">DDT_on_login</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.ebanking.testcases.TC_addnewcustomer_003</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUP</span>
+                <br/>
+                <span class="ignored-method-name">createNewCustomer</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.ebanking.testcases.TC_logintestcase_001</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">logintest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-InetBanking" class="panel">
@@ -244,19 +279,25 @@ Continue</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.ebanking.testcases.TC_addnewcustomer_003</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
+              <div class="chronological-class-name">com.ebanking.testcases.TC_logintestcase_001</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
                 <span class="method-name">setUP(chrome)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ebanking.testcases.TC_EditCustomer_004</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">createNewCustomer</span>
-                <span class="method-start">11473 ms</span>
+                <span class="method-name">testEditCustomer</span>
+                <span class="method-start">11539 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ebanking.testcases.TC_logintestcase_001</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">45426 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-start">23874 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -12,7 +12,7 @@ import com.ebanking.pageobjects.loginPage;
 
 public class TC_logintestcase_001 extends BaseClass 
 {
-     @Test
+     @Test(groups="SmokeTest")
 	public void logintest() throws IOException, InterruptedException
 	{
     	String userid=rd.getUserID();
